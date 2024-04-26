@@ -7,4 +7,6 @@ Requires letsencrypt folder mounted for certificate for dovecot.
 Will required persistent folders mounted for mail content etc.
 Also need to handle password setting of the benr user on container startup using encrypted value somehow.
 
-Potentially Dovecot/postfix should be split and share a volume? t
+Potentially Dovecot/postfix should be split and share a volume?
+
+Also will need /etc/postfix/sasl_passwd set and tools for that to work. (secret populated from somewhere?)
