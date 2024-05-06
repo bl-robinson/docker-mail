@@ -3,7 +3,7 @@ FROM debian:bookworm
 RUN apt update
 RUN apt install -y \
   mailutils \
-#   libsas12-modules \
+  libsasl2-modules \
   postfix \
   postfix-policyd-spf-python \
   opendkim \
