@@ -10,5 +10,6 @@ Potentially Dovecot/postfix should be split and share a volume?
 Also will need /etc/postfix/sasl_passwd set and tools for that to work. (secret populated from somewhere?)
 
 Mounts that are required....
-/var/mail
-/home/benr/mail
+/var/spool/postfix
+/var/dovecot
+/etc/cert
