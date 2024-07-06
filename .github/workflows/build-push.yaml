@@ -19,3 +19,8 @@ jobs:
           context: .
           push: true
           tags: container-registry.k8s.home.blrobinson.uk/docker-mail:latest
+      - uses: azure/setup-kubectl@v3
+      - name: Start Rollout restart
+        run: kubectl rollout restart deployment/mail -n mail
+      - name: Monitor restart
+        run: kubectl rollout status deployment/mail -n mail
