@@ -1,4 +1,4 @@
 #!/bin/bash
 opendkim
 postfix start
-dovecot
+dovecot -F
