@@ -2,6 +2,7 @@ FROM debian:bookworm
 
 RUN apt update
 RUN apt install -y \
+  rsyslog \
   mailutils \
   libsasl2-modules \
   postfix \
